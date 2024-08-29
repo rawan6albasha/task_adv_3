@@ -1,0 +1,258 @@
+.video_view .video_part{
+position: relative;
+}
+.video_view .video_part .background_img{
+    height: 34.4rem;
+    width: 100%;
+}
+.video_view .video_part .video_absolute {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    gap: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    transform: translateX(-50%);
+    width: 100%;
+
+}
+
+.video_view .video_part .video_absolute .video_frame{
+    position: relative;
+    margin: 0 4%;
+}
+.video_view .video_part .video_absolute .video_frame span{
+    position: absolute;
+    color: var(--orange);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    right: 50%;
+    padding: 12px 0 0 16px;
+    outline: 10px solid #f35525a6;
+    background-color: white;
+    -webkit-border-radius: 50%;
+}
+.video_view .video_part .video_absolute .video_title {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    align-items: center;
+}
+/* .video_view .video_part .video_absolute .video_title span{ */
+    /* color: var(--orange) ; */
+    /* border-left: 2px solid var(--orange); */
+    /* padding-left: 6px; */
+    /* font-weight: 600; */
+/* } */
+.video_view .video_part .video_absolute .video_title p{
+    color: white;
+    text-align: center;
+    width: 438px;
+}
+.video_view .video_part .video_absolute .video_img {
+    width: 100%;
+    border-radius: 11px;
+}
+
+.video_view .counters {
+    margin-top: 348px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.video_view .counters .counter{
+   
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    width: max-content;
+    height: 88px;
+    padding: 47px 38px;
+    background-color: #ffeee9;
+    border-radius: 10px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.video_view .counters .counter .counter_num{
+    color: var(--orange);
+    font-size: 46px;
+    font-weight: 600;
+}
+.video_view .counters .counter .counter_title{
+    font-size: 18px;
+    font-weight: 600;
+    width: 117px;
+}
+.video_view .counters .counter span{
+    position: absolute;
+    background-color: var(--orange);
+    width: 45px;
+    height: 45px;
+    top: -17px;
+    right: -6%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+/* _________________________________MEDIA QUERY_________________________________________________________________________________________________________________ */
+
+/* @media (min-width: 992px) and (max-width: 1162px) { */
+  /* } */
+/*  */
+  /* @media (min-width: 768px) and (max-width: 991px) { */
+  /* } */
+/*  */
+  /* @media (min-width: 576px) and (max-width: 767px) { */
+  /* } */
+  /* @media (max-width: 575px) { */
+  /* } */
+
+
+@media (min-width: 992px) and (max-width: 1162px) {
+    .video_view .video_part .video_absolute {
+        top: 25%;
+    }
+    .video_view .counters .counter{
+        padding: 47px 23px;
+    }
+    .video_view .counters .counter span{
+        width: 35px;
+        height: 35px;
+    }
+    .video_view .counters {
+        margin-top: 245px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .video_view .video_part .video_absolute {
+        top: 9%;
+        gap: 37px;
+    }
+    .video_view .counters .counter{
+        padding: 42px 18px
+    }
+    .video_view .counters .counter span{
+        width: 32px;
+        height: 32px;
+    }
+    .video_view .counters {
+        margin-top: 309px;
+    }
+    .video_view .video_part .video_absolute .video_frame span{
+        width: 35px;
+        height: 35px;
+        padding: 9px 0 0 13px;
+        outline: 8px solid #f35525a6;
+    }
+    .video_view .video_part .video_absolute .video_title p{
+        width: 271px;
+    }
+
+    .video_view .video_part .background_img{
+        height: 22rem;
+    }
+
+
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    .video_view .video_part .video_absolute {
+        top: 15%;
+        gap: 25px;
+    }
+    .video_view .counters .counter{
+        padding: 42px 11px;
+    }
+    .video_view .counters .counter span{
+        width: 26px;
+        height: 26px;
+        top: -12px;
+    }
+    .video_view .counters {
+        margin-top: 136px;
+    }
+    .video_view .video_part .video_absolute .video_frame span{
+        width: 35px;
+        height: 35px;
+        padding: 9px 0 0 13px;
+        outline: 8px solid #f35525a6;
+    }
+    .video_view .video_part .video_absolute .video_title p{
+        width: 271px;
+    }
+
+    .video_view .video_part .background_img{
+        height: 22rem;
+    }
+
+    .video_view .counters .counter .counter_num{
+        font-size: 35px;
+    }
+    .video_view .counters .counter .counter_title{
+        font-size: 16px;
+        width: 84px;
+    }
+  }
+  @media (max-width: 575px) {
+    .video_view .video_part .video_absolute {
+        top: 15%;
+        gap: 25px;
+    }
+    .video_view .counters .counter{
+        padding: 18px 11px;
+        gap: 11px;
+        height: 72px;
+    }
+    .video_view .counters .counter span{
+        width: 26px;
+        height: 26px;
+        top: -12px;
+    }
+    .video_view .counters {
+        margin-top: 28%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 19px
+    }
+    .video_view .video_part .video_absolute .video_frame span{
+        width: 19px;
+        height: 19px;
+       
+        padding: 0px 0 0 7px;
+        outline: 4px solid #f35525a6;
+    }
+    .video_view .video_part .video_absolute .video_frame span svg{
+        font-size: 9px;
+        margin-bottom: 2px;
+    }
+    .video_view .video_part .video_absolute .video_title p{
+        width: 271px;
+    }
+
+    .video_view .video_part .background_img{
+        height: 15rem;
+    }
+    .video_view .video_part .video_absolute .video_title{
+        gap: 9px;
+    }
+
+    .video_view .counters .counter .counter_num{
+        font-size: 35px;
+    }
+    .video_view .counters .counter .counter_title{
+font-size: 13px;
+        width: 90px;
+    }
+  }

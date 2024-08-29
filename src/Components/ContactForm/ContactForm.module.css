@@ -1,0 +1,127 @@
+ form {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: space-between;
+     background-color: white;
+     border-radius: 10px;
+     box-shadow: 0 0 20px #a9a9a96b;
+     gap: 22px;
+     padding: 25px 25px 38px 25px;
+     height: 567px;
+     width: -webkit-fill-available;
+ }
+
+ form .input {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 14px;
+ }
+
+ form .input input,
+ form .input textarea {
+     width: 317px;
+     padding: 12px;
+     border-radius: 18px;
+     border: none;
+     background-color: #f6f6f6;
+     -webkit-border-radius: 18px;
+     -moz-border-radius: 18px;
+     -ms-border-radius: 18px;
+     -o-border-radius: 18px;
+ }
+
+ form button {
+     border: none;
+     color: white;
+     background-color: black;
+     border-radius: 35px;
+     padding: 11px;
+     width: 119px;
+     margin-top: 13px;
+ }
+ /* _________________________________MEDIA QUERY_________________________________________________________________________________________________________________ */
+
+ @media (min-width: 992px) and (max-width: 1162px) {
+    form .input input,
+    form .input textarea {
+        width: 228px;
+    }
+    form{
+        padding: 21px 15px 38px 16px;
+    }
+ }
+ @media (min-width: 768px) and (max-width: 991px) {
+    form{
+        padding: 18px 10px 19px 10px;
+    }
+
+    form .input input,
+    form .input textarea {
+        width: 27vw;
+        padding: 10px;
+    }
+    form .input {
+        gap: 5px;
+    }
+    form .input textarea {
+        height: 100px;
+
+    }
+
+    form button {
+        padding: 7px;
+        width: 112px;
+        font-size: 13px;
+        margin-top: 0px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    form{
+        padding: 18px 10px 19px 18px;
+        gap: 13px;
+        font-size: 15px;
+    }
+
+    form .input input,
+    form .input textarea {
+        width: 34vw;
+        padding: 8px;
+    }
+    form .input {
+        gap: 5px;
+    }
+    form .input textarea {
+        height: 84px;
+
+    }
+
+    form button {
+        padding: 7px;
+        width: 112px;
+        font-size: 13px;
+        margin-top: 0px;
+    }
+
+}
+
+@media (max-width: 575px) {
+    form .input input {
+        width: 73vw;
+    }
+    form .input textarea{
+        width: 73vw;
+    }
+    form{
+        padding: 25px 10px 38px 10px;
+        font-size: 3.2vw;
+    }
+    form button {
+        margin-right: 44%;
+    }
+    form{
+        align-items: center;
+    }
+}

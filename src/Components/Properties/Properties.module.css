@@ -1,0 +1,45 @@
+.properties{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+}
+
+.properties .Properties_head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 29px;
+}
+.properties .Properties_head p{
+    font-size: 3vw;
+    width: 353px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* _________________________________MEDIA QUERY_________________________________________________________________________________________________________________ */
+
+@media (min-width: 992px) and (max-width: 1162px) {
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .properties .Properties_head p{
+        font-size: 4vw;
+        width: 336px;
+
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    .properties .Properties_head p{
+        font-size: 6vw;
+
+    }
+  }
+  @media (max-width: 575px) {
+    .properties .Properties_head p{
+        font-size: 6vw;
+        width: 211px;
+    }
+  }

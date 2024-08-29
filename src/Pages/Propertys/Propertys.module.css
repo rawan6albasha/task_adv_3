@@ -1,0 +1,117 @@
+.pagination .Propertys{
+    margin: 200px 0;
+}
+ .pagination_filter{
+    margin: 74px 256px;
+}
+.pagination ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px ;
+  }
+  .pagination ul .PageActive
+  {
+    /* transition: margin-bottom 0.3s ease , color 0.3s ease  ,background-color 0.3s ease; */
+    background-color: var(--orange);
+    color: white;
+    width: 48px;
+    height: 48px;
+    /* margin-bottom: 32px; */
+    padding-top: 14px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+
+}
+  
+.pagination ul li {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    padding: 13px;
+    font-size: 1.4vw;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+  }
+  .pagination ul li svg{
+    font-size: 1.1vw;
+    padding-bottom: 1px;
+  }
+  @media (min-width: 992px) and (max-width: 1162px) {
+  .pagination_filter{
+    margin: 74px 123px;
+}
+
+.pagination ul li ,.pagination ul .PageActive{
+  width: 37px;
+  height: 37px;
+  padding: 10px;
+}
+.pagination ul{
+  gap:7px;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .pagination_filter{
+    margin: 49px 107px;
+}
+
+.pagination ul li ,.pagination ul .PageActive{
+  width: 37px;
+  height: 37px;
+  padding: 10px;
+}
+.pagination ul{
+  gap:7px;
+}
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .pagination_filter{
+    margin: 33px 46px
+}
+
+.pagination ul li ,.pagination ul .PageActive{
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  font-size: 12px;
+}
+.pagination ul{
+  gap:7px;
+}
+.pagination ul li svg{
+  font-size: 2vw;
+}
+}
+@media (max-width: 575px) {
+  .pagination_filter{
+    margin: 15px 0px;
+
+}
+
+.pagination ul li ,.pagination ul .PageActive{
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  font-size: 12px;
+}
+.pagination ul{
+  gap:4px;
+}
+.pagination ul li svg{
+  font-size: 3vw;
+}
+}
+  

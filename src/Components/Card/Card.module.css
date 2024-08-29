@@ -1,0 +1,151 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+.cards .card{  
+    padding: 23px; 
+    width: 32%;
+    max-width: 100%;
+    border-radius: 11px;
+    background-color: #fafafa;
+    }
+    .cards .card img{
+        width:100%;
+        border-radius: inherit;
+        -webkit-border-radius: inherit;
+        -moz-border-radius: inherit;
+        -ms-border-radius: inherit;
+        -o-border-radius: inherit;
+}
+.cards .card .part1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+.cards .card .part1 p{
+    font-size: 1.3vw;
+    border-radius: 4px;
+    padding: 4px 7px;
+    background-color: #fbd9cf;
+}
+.cards .card .part1 span {
+    font-weight: 600;
+    font-size: 1.7vw;
+    color: var(--orange);
+}
+.cards .card .part2{
+    font-size: 1.43vw;
+}
+.cards .card .part3 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 26px 0px;
+    justify-content: flex-start;
+    gap: 5px;
+}
+.cards .card .part3 .part33{
+    display: flex;
+    margin-right: 40px;
+    gap: 3px;
+}
+.cards .card .part3 .part33 p{
+    color: #504949;
+    font-size: 1vw;
+}
+.cards .card .part3 .part33 b{
+    font-size: 1.2vw;
+}
+.cards .card .part4{
+    
+    text-align: center;
+    margin: 17px auto 0px auto;
+    color: white;
+    background-color: black;
+    width: max-content;
+    border-radius: 39px;
+    padding: 9px 17px;
+    font-size: 1.2vw;
+}
+
+/* _________________________________MEDIA QUERY_________________________________________________________________________________________________________________ */
+
+@media (min-width: 992px) and (max-width: 1162px) {
+    .cards .card .part3 .part33 {
+        margin-right: 30px;
+
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .cards .card .part3 .part33 {
+        margin-right: 15px;
+
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    .cards .card .part4{
+        font-size: 1.8vw;
+        margin: 13px auto 0px auto;
+        padding: 9px 13px
+    }
+    .cards .card{
+        width: 48%;
+        padding: 12px;
+    }
+
+    .cards .card .part3 .part33 p{
+        font-size: 2vw;
+    }
+    .cards .card .part3 .part33 b{
+        font-size: 2vw;
+    }
+
+    .cards .card .part1 p{
+        font-size: 2vw;
+    }
+    .cards .card .part1 span {
+        font-size: 3vw;
+    }
+    .cards .card .part2{
+        font-size: 2.5vw;
+    }
+
+    .cards .card .part3 .part33 {
+        margin-right: 5px;
+        gap: 3px;
+    }
+  }
+  @media (max-width: 575px) {
+    .cards .card{
+        width: 100%;
+    }
+
+    .cards .card .part1 span{
+        font-size: 5vw;
+    }
+    .cards .card .part1 p{
+        font-size: 4vw;
+    }
+    .cards .card .part2{
+        font-size: 4.5vw;
+    }
+    .cards .card .part3 .part33 p{
+        font-size: 4vw;
+    }
+    .cards .card .part3 .part33 b{
+        font-size: 4vw;
+    }
+    .cards .card .part4{
+        font-size: 4vw;
+    }
+    .cards .card .part3 .part33 {
+        margin-right: 0px;
+        gap: 1px;
+    }
+  }

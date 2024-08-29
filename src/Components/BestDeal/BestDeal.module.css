@@ -1,0 +1,270 @@
+
+.best_deal {
+    background-color: #fafafa;
+}
+
+.best_deal .best_head{
+    padding-top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 63px;
+}
+
+.best_deal .best_head p{
+    /* font-weight: 600; */
+    /* font-size: 36px; */
+    width: 62%;
+    padding-top: 19px;
+}
+
+
+
+.best_deal .best_body .details{
+    box-shadow: 0 0 20px 0px #8080804d;
+    border-radius: 17px;
+    width: 30%;
+    padding: 0 26px;
+}
+
+.best_deal .best_body .details .detail{
+    display: flex;
+    gap: 18px;
+    justify-content: space-between;
+    padding: 22px 0;
+}
+.best_deal .best_body .details .detail b{
+    font-size: 22px;
+}
+.best_deal .best_body .details .detail p{
+    color: var(--light-gray);
+    font-size: 14px;
+}
+
+.best_deal .best_body{
+    padding-bottom: 64px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.best_deal .best_body .pargh{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    width: 25%;
+}
+.best_deal .best_body .pargh .p_line{
+    line-height: 30px;
+}
+.best_deal .best_body img{
+    width: 40%;
+}
+.best_deal .best_body .pargh .schedule {
+    display: flex;
+    border-radius: 22px;
+    /* height: 33px; */
+    width: max-content;
+    color: white;
+    /* margin-left: 35px; */
+    background-color: black;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+}
+.best_deal .best_body .pargh p{
+    color: #504949;
+}
+.best_deal .best_body .pargh .schedule p {
+    color: white;
+    padding: 14px 20px 9px 11px;
+}
+
+.best_deal .best_body .pargh .schedule span {
+    font-size: 15px;
+    padding: 14px 16px;
+    background-color: #f35525;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+
+
+
+/* _________________________________MEDIA QUERY_________________________________________________________________________________________________________________ */
+
+@media (min-width: 992px) and (max-width: 1162px) {
+    .best_deal .best_body .pargh .schedule p {
+        padding: 9px 14px 1px 6px;
+    }
+
+    .best_deal .best_body .pargh .schedule span {
+        padding: 9px 11px;
+    }
+    .best_deal .best_head {
+        margin-bottom: 50px;
+    }
+    .best_deal .best_body .pargh .p_line{
+        line-height: 25px;
+    }
+    .best_deal .best_body .pargh{
+        gap: 15px;
+    }
+    .best_deal .best_body .details {
+        padding: 0 18px;
+    }
+    .best_deal .best_body .details .detail b{
+        font-size: 19px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .best_deal .best_body .pargh .schedule p {
+        padding: 7px 11px 9px 4px;
+        font-size: 12px;
+    }
+
+    .best_deal .best_body .pargh .schedule span {
+        font-size: 12px;
+        padding: 8px 8px;
+    }
+
+
+    .best_deal .best_head {
+        margin-bottom: 50px;
+    }
+    .best_deal .best_body .pargh .p_line{
+        line-height: 25px;
+    }
+    .best_deal .best_body .pargh{
+        gap: 12px;
+    }
+    .best_deal .best_body .details {
+        padding: 0 18px;
+    }
+    .best_deal .best_body .details .detail b{
+        font-size: 18px;
+    }
+    .best_deal .best_body .details .detail p{
+        font-size: 13px;
+    }
+    .best_deal .best_body .details .detail{
+        gap: 7px;
+        padding: 20px 0;
+    }
+    /* .best_deal .best_head .btns .btn{ */
+        /* font-size: 17px; */
+    /* } */
+
+
+    
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    .best_deal .best_body .pargh .schedule p {
+        padding: 5px 7px 0px 5px;
+        font-size: 8px;
+
+    }
+
+    .best_deal .best_body .pargh .schedule span {
+        font-size: 8px;
+        padding: 5px 5px;
+    }
+
+
+
+    .best_deal .best_head {
+        margin-bottom: 50px;
+    }
+    .best_deal .best_body .pargh .p_line{
+        line-height: 25px;
+        font-size: 10px;
+    }
+    .best_deal .best_body .pargh{
+        gap: 12px;
+    }
+    .best_deal .best_body .pargh p{
+        font-size: 13px;
+    }
+    .best_deal .best_body .details {
+        padding: 0 18px;
+    }
+    .best_deal .best_body .details .detail b{
+        font-size: 16.5px;
+    }
+    .best_deal .best_body .details .detail p{
+        font-size: 12px;
+    }
+    .best_deal .best_body .details .detail{
+        gap: 7px;
+        padding: 17px 0;
+    }
+    /* .best_deal .best_head .btns .btn{ */
+        /* font-size: 15px; */
+        /* padding: 8px 12px */
+    /* } */
+    /* .best_deal .best_head .btns{ */
+        /* gap: 10px */
+    /* } */
+
+    .best_deal .best_head p{
+        font-size: 24px;
+        width: 95%;
+        padding-top: 9px;
+    }
+  }
+
+
+
+  @media (max-width: 575px) {
+    .best_deal .best_body .pargh .schedule p {
+        padding: 9px 14px 1px 6px;
+    }
+
+    .best_deal .best_body .pargh .schedule span {
+        padding: 9px 11px;
+    }
+    .best_deal .best_body .pargh .schedule{
+        width: max-content;
+    }
+    .best_deal .best_head,.best_deal .best_body{
+        flex-wrap: wrap;
+        gap: 35px;
+    }
+    .best_deal .best_body .pargh,
+    .best_deal .best_body .details,
+    .best_deal .best_body img{
+        width: 100%;
+    }
+    /* .best_deal .best_head .btns{ */
+        /* width: 100%; */
+        /* gap: 7px; */
+    /* } */
+    /* .best_deal .best_head .btns .btn{ */
+        /* font-size: 4vw; */
+        /* padding: 6px 8px; */
+    /* } */
+    .best_deal .best_head p{
+        font-size: 27px;
+        width: 100%;
+        text-align: center;
+    }
+    /* .best_deal .best_head .best_title{ */
+        /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* margin-bottom: 31px; */
+    /* } */
+    .best_deal .best_body .details .detail b{
+        font-size: 7vw;
+    }
+    .best_deal .best_body .details .detail p{
+        font-size: 4vw;
+    }
+    
+  }

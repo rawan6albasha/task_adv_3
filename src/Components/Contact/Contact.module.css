@@ -1,0 +1,164 @@
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 455px;
+}
+.contact .background_div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* z-index: -1; */
+    /* overflow: hidden; */
+}
+.contact .background_div .background_img {
+    width: 100%;
+    /* height: 100%; */
+
+}
+
+.contact .background_div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.contact .contact_absolute {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 10%;
+    /* left: 7%; */
+    gap: 48px;
+}
+
+.contact .contact_absolute .contact_title p {
+    color: white;
+}
+
+.contact .contact_absolute .contact_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 432px;
+    gap: 34px;
+}
+
+.contact .contact_absolute .contact_frame {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 52px;
+
+}
+
+.contact .contact_absolute .contact_frame .map {
+    display: flex;
+    flex-direction: column;
+    gap: 71px;
+    /* width: 100%; */
+    width: -webkit-fill-available;
+}
+
+
+
+.contact .contact_absolute .contact_frame .map,
+.contact .contact_absolute .contact_frame form {
+    height: 567px;
+    
+}
+.contact .contact_absolute .contact_frame form {
+    width: 35%;
+}
+
+iframe{
+    width: 100%;
+    margin: 0;
+
+}
+/* _________________________________MEDIA QUERY_________________________________________________________________________________________________________________ */
+
+@media (min-width: 992px) and (max-width: 1162px) {
+    .contact .contact_absolute .contact_frame{
+        gap: 36px;
+    }
+    .contact {
+        margin-bottom: 532px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+
+    .contact .contact_absolute .contact_frame .map,
+    .contact .contact_absolute .contact_frame form {
+        height: 444px;
+        
+    }
+    .contact .contact_absolute .contact_frame .map {
+gap: 35px;
+width: 60%;
+    }
+    .contact .contact_absolute{   
+         gap: 23px;
+        }
+        
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    
+    .contact .contact_absolute .contact_frame .map,
+    .contact .contact_absolute .contact_frame form {
+        height: 404px;
+        
+    }
+    .contact .contact_absolute .contact_frame form {
+        width: 43%;
+    }
+    .contact .contact_absolute .contact_frame .map {
+        gap: 50px;
+        width: 56%;
+    }
+    .contact .contact_absolute{  
+        top: 3%; 
+         gap: 23px;
+        }
+        .contact .contact_absolute .contact_frame{
+            justify-content: center;
+            gap: 15px;
+        }
+        .contact{
+            margin-bottom: 0;
+        }
+        
+  }
+  @media (max-width: 575px) {
+    .contact .contact_absolute .contact_frame{
+        flex-direction: column;
+    }
+    .contact {
+        margin-bottom: 574px;
+    }
+    .contact .contact_absolute .contact_frame form {
+        width: 100%;
+    }
+    .contact .background_div .background_img {
+               height: 60vw;
+    
+    }
+    .contact .contact_absolute{   
+        top: 5%;
+       }
+       .contact .contact_absolute .contact_frame .map {
+        gap: 41px;
+    }
+    .contact {
+        margin-bottom: 1198px;
+    }
+  }

@@ -1,0 +1,201 @@
+.hero{
+    margin-bottom: 10px;
+}
+.hero .btns{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 0;
+}
+.hero img{
+    position: relative;
+    width: -webkit-fill-available;;
+}
+.hero .hero_slider {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 27vw;
+}
+
+
+.hero .hero_slider .arrow {
+    border-radius: 50%;
+    width: 40px; /* زيادة الحجم لجعلها أكثر وضوحاً */
+    height: 40px;
+    color: white;
+    background-color: #91898970;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.hero .btns .active{
+    background-color: #f35525;
+}
+.hero .btns .btn{
+    border: 1px solid #f35525;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+.hero .hero_pargh{
+
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    /* margin: -108px 456px 0 0 */
+    margin: -9% 44% 0 0;
+}
+.hero .hero_pargh p{
+    background-color: white;
+    color: black;
+    width: max-content;
+    padding: 6px;
+    margin-bottom: 18px;
+}
+.hero .hero_pargh h2{
+    width: 321px;
+    font-size: 52px;
+}
+.hero .hero_pargh p span{
+    color: #f35525;
+}
+
+
+/* _________________________________MEDIA QUERY_________________________________________________________________________________________________________________ */
+
+/* @media (min-width: 992px) and (max-width: 1162px) { */
+
+  /* } */
+/*  */
+  /* @media (min-width: 768px) and (max-width: 991px) { */
+
+  /* } */
+/*  */
+  /* @media (min-width: 576px) and (max-width: 767px) { */
+
+  /* } */
+  /* @media (max-width: 575px) { */
+
+  /* } */
+
+
+@media (min-width: 992px) and (max-width: 1162px) {
+    .hero .hero_slider{  
+        top: 41%;
+        }
+        .hero .hero_pargh h2{
+            width: 285px;
+            font-size: 48px;
+        }
+
+        .hero .hero_pargh{
+            margin: -60px 284px 0 0;
+        }
+
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .hero .hero_pargh h2{
+        width: 244px;
+        font-size: 40px;
+    }
+    .hero .hero_pargh{
+        margin: -9% 39% 0 0;
+    }
+    
+    
+    
+
+    .hero .hero_slider{  
+        top: 33vw;
+        }
+
+        .hero .hero_pargh p{
+            padding: 4px;
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+        .hero .hero_slider .arrow {
+            width: 35px;
+            height: 35px;
+        }
+            .hero .btns .btn{    
+                width: 9px;
+                height: 9px;
+            }
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    .hero .hero_pargh h2{
+        width: 204px;
+        font-size: 35px;
+    }
+
+    .hero .hero_pargh{
+        margin: -9% 31% 0 0;
+    }
+
+    
+    .hero .hero_pargh p{
+        padding: 4px;
+        margin-bottom: 7px;
+        font-size: 8px;
+    }
+    .hero .hero_slider{  
+        top: 31vw;
+        }
+        .hero .hero_slider .arrow {
+            width: 20px;
+            height: 20px;
+            font-size: 10px;
+        }
+        .hero .btns .btn{    
+            width: 7px;
+            height: 7px;
+        }
+  }
+  @media (max-width: 575px) {
+    .hero .hero_pargh{
+        margin: 9% 19% 0 0;
+    }
+
+    .hero .hero_pargh h2{
+        width: 117px;
+        font-size: 19px;
+    
+    
+    }
+    .hero .hero_pargh p{
+        padding: 2px;
+        margin-bottom: 3px;
+        margin-top: 2px;
+        font-size: 7px;}
+    .hero .hero_slider .arrow {
+        width: 15px;
+        height: 15px;
+        font-size: 9px;
+    }
+    .hero .hero_slider{
+        top: 13vw;
+    }
+
+    .hero .btns .btn{    
+        width: 4px;
+        height: 4px;
+    }
+
+    }
+  
+      

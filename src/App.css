@@ -1,0 +1,18 @@
+header{
+    margin-bottom: 80px;
+}
+
+@media (min-width: 992px) and (max-width: 1162px) {
+    header{
+        /* margin-bottom: 193px; */
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+
+  }
+  @media (max-width: 575px) {
+  }
